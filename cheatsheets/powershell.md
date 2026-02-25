@@ -1,14 +1,27 @@
-<h1>PowerShell</h1>
+# PowerShell
 
-PowerShell Logo goes here
+ ![image](/cheatsheets/PowerShell_5.0_icon.png)
 
-About PowerShell
+| Task  | Cmdelt | Common Aliases   |
+|----------|-------|--------|
+| Get help   | Get-Help <Command-Name>   | man     |
+| List commands    | Get-Command   |  |
+| Get current location   | Get-Location    |pwd |
+|Change location| Set-Location <Path>| cd|                      
+|List directory contents   | Get-ChildItem | ls, dir, gci | 
+| Get file content   | Get-Help <File-Path>   | gc, cat      |
+| Copy items    | Copy-Item <Source> <Destination>    | cp, cpi  |
+| Move items    | Move-Item <Source> <Destination>     |mv, mi  |
+|Remove items | Remove-Item <Name> | rm |                      
+|Create new item    | New-Item <Name>  | mkdir, touch  | 
+|Manage processes  | Get-Process, Stop-Process  |  |                      
+|Manage services    | Get-Service, Start-Service   |  | 
 
-**PowerShell** is a powerful command-line shell and scripting language developed by Microsoft. It is designed to help users automate tasks, manage systems, and perform administrative tasks efficiently. Built on the .NET framework, **PowerShell** is both a _**command-line tool**_ and a _**scripting environment**_, making it a versatile tool for programmers and system administrators.
+**[PowerShell](https://docs.microsoft.com/en-us/powershell/)** is a powerful command-line shell and scripting language developed by Microsoft. It is designed to help users automate tasks, manage systems, and perform administrative tasks efficiently. Built on the [.NET framework]( https://learn.microsoft.com/en-us/dotnet/framework/get-started/overview ), **PowerShell** is both a _**command-line tool**_ and a _**scripting environment**_, making it a versatile tool for programmers and system administrators.
 
-Quote: "PowerShell is great because we had a series of rockstar engineers add their awesomeness to the project." ( from the interview with Jeffrey Snover, PowerShell Inventor) 
+Quote: "PowerShell is great because we had a series of rockstar engineers add their awesomeness to the project." ( from the [interview]( https://evrone.com/blog/jeffrey-snover-interview ) with Jeffrey Snover, PowerShell Inventor) 
 
-<h2>Why Learn PowerShell?</h2>
+## Why Learn PowerShell?
 PowerShell is an essential tool for:
 
 - Automating repetitive tasks.
@@ -27,9 +40,9 @@ PowerShell is an essential tool for:
 - Extensibility: Create custom functions, modules, and scripts.
 - Cross-Platform: PowerShell Core runs on Windows, macOS, and Linux.
 
-<h2>PowerShell History</h2>
+## PowerShell History
 
-<h3>PowerShell Version Comparison</h3>
+### PowerShell Version Comparison
 
 | Version  | Release Year | Key Features  |
 |----------|-------|--------|
@@ -45,45 +58,47 @@ Version Summary
 - PowerShell Core: Versions 6.0 and above (cross-platform).
 
 
-PowerShell for Beginners
+## PowerShell for Beginners
 
-Basic Commands to Get Started
+### Basic Commands to Get Started
 
-Get-Command: Lists all available commands.
-Get-Help: Provides help information for commands.
-Get-Process: Displays all running processes.
-Stop-Process: Stops a specific process.
-Set-Location: Changes the current directory (like cd in Command Prompt).
-New-Item: Creates a new file or directory.
+- **Get-Command**: Lists all available commands.
+- **Get-Help**: Provides help information for commands.
+- **Get-Process**: Displays all running processes.
+- **Stop-Process**: Stops a specific process.
+- **Set-Location**: Changes the current directory (like _cd_ in Command Prompt).
+- **New-Item**: Creates a new file or directory.
 
-Example Script
+## Example Script
 
 Here’s a simple script to list all files in a directory and display their sizes:
 # Get all files in the current directory
-$files = Get-ChildItem
+- $files = Get-ChildItem
     
 # Display file names and sizes
-foreach ($file in $files) {
+- foreach ($file in $files) {
 Write-Output "$($file.Name) - $($file.Length) bytes"
 }
 
-Editors for PowerShell Scripting
+### Editors for PowerShell Scripting
 
 When writing and debugging PowerShell scripts, using a dedicated editor can greatly enhance your productivity. Here are two popular options:
 
-Windows PowerShell Integrated Scripting Environment (ISE)
+#### Windows PowerShell Integrated Scripting Environment (ISE)
 
-What it is: A built-in editor for Windows PowerShell (versions 1.0 to 5.1).
+What it is: 
+- A built-in editor for Windows PowerShell (versions 1.0 to 5.1).
 Features:
-Syntax highlighting.
-Debugging tools (breakpoints, step-through execution).
-Integrated console for testing scripts.
-Multi-tab interface for working with multiple scripts.
-Best for: Beginners and users working on older versions of PowerShell.
+- Syntax highlighting.
+- Debugging tools (breakpoints, step-through execution).
+- Integrated console for testing scripts.
+- Multi-tab interface for working with multiple scripts.
+Best for: 
+- Beginners and users working on older versions of PowerShell.
 
-ISE Image goes here
+ ![image](.\ISE_panes.png ) 
 
-Visual Studio Code (VS Code)
+#### Visual Studio Code (VS Code)
 
 What it is: A free, open-source, cross-platform code editor by Microsoft.
 Features:
@@ -94,7 +109,7 @@ Support for Git and other version control systems.
 Cross-platform (Windows, macOS, Linux).
 Best for: Modern PowerShell development, especially with PowerShell 7 and cross-platform scripting.
 
-VSCode Image goes here
+ ![image](.\vs_code.png ) 
 
 Useful Resources for Learning PowerShell
 Official PowerShell Documentation
