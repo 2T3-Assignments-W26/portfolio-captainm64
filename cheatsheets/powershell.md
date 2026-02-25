@@ -64,6 +64,7 @@ Version Summary
 
 - **Get-Command**: Lists all available commands.
 - **Get-Help**: Provides help information for commands.
+- **Add-Content**: Appends content, such as words or data, to a file. 
 - **Get-Process**: Displays all running processes.
 - **Stop-Process**: Stops a specific process.
 - **Set-Location**: Changes the current directory (like _cd_ in Command Prompt).
