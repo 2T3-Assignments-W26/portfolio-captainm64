@@ -2,7 +2,7 @@
 
 # This a comment 
 
-# To ignore use *.extension which will ignore all files with the specified extension 
+# To ignore use *.extension which will ignore all files with the specified extension blahblahblah
 
 # Exmple to ignore exe files 
 
@@ -10,17 +10,17 @@
 
 # To ignore a specific file, provide its name 
 
-secrets.txt 
-PowerShell.txt
-test.txt
+*secrets.txt 
+*PowerShell.txt
+*test.txt
 
  
 
 # To ignore all files in a folder, folderName/ 
 
-# Here is an example to ignore all files in bin folder 
+# Here is an exaample to ignore all files in bin folder 
 
-# bin/ 
+# bin/
 
  
 
