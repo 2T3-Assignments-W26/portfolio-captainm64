@@ -6,7 +6,7 @@
 
 # Exmple to ignore exe files 
 
-txt
+/txt.log
 
  
 
