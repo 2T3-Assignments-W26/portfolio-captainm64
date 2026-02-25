@@ -1,22 +1,6 @@
- 
+#
 
-# This a comment 
-
-# To ignore use *.extension which will ignore all files with the specified extension blahblahblah
-
-# Exmple to ignore exe files 
-
-/txt.log
-
- 
-
-# To ignore all files in a folder, folderName/ 
-
-# Here is an exaample to ignore all files in bin folder 
-
-# bin/
-
- 
+ *test.txt
 
  
 
