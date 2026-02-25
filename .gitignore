@@ -6,7 +6,7 @@
 
 # Exmple to ignore exe files 
 
-*.exe test.txt
+*.txt
 
  
 
