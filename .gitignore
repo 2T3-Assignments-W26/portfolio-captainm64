@@ -6,9 +6,8 @@
 
 # Exmple to ignore exe files 
 
-*.exe 
-test.txt
-secrets.txt
+*.exe test.txt
+
  
 
 # To ignore all files in a folder, folderName/ 
