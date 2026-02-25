@@ -7,13 +7,8 @@
 # Exmple to ignore exe files 
 
 *.exe 
-
-# To ignore a specific file, provide its name 
-
-*.secrets
-*.PowerShell
-*.test
-
+test.txt
+secrets.txt
  
 
 # To ignore all files in a folder, folderName/ 
